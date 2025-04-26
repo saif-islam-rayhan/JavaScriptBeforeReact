@@ -156,3 +156,26 @@ const intervalId = setInterval(() => {
     console.log("Interval stopped.");
   }
 }, 1000); // runs every 1000ms = 1 second
+
+//                                        Loop
+// Traditional for loop
+for (let i = 0; i < 5; i++) {
+  console.log("Traditional for loop:", i);
+}
+
+// for...of loop (used to iterate over iterable items like arrays)
+const numb = [10, 20, 30, 40];
+for (const num of numb) {
+  console.log("for...of loop value:", num);
+}
+
+// for...in loop (used to iterate over object keys)
+const person = {
+  name: "Alice",
+  age: 22,
+  city: "Dhaka"
+};
+
+for (const key in person) {
+  console.log(`for...in loop key: ${key}, value: ${person[key]}`);
+}
